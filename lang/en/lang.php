@@ -2,15 +2,24 @@
 
 return [
     'plugin' => [
-        'name' => 'User Plus+',
-        'description' => 'Adds profile fields to users.',
+        'name' => 'User Profile',
+        'description' => 'Add user profile fields to front-end users.',
     ],
-    'user' => [
-        'phone' => 'Phone',
-        'mobile' => 'Mobile',
-        'company' => 'Company',
-        'city' => 'City',
-        'zip' => 'Zip',
-        'street_addr' => 'Street Address',
-    ],
+    'settings' => [
+        'menu_label' => 'User profile',
+        'menu_description' => 'Manage user profile fields.',
+        'form_label' => 'User profile fields',
+        'form_comment' => 'Use this section to add extra user fields.',
+        'form_prompt' => 'Add a new profile field',
+        'field_name_label' => 'Name',
+        'field_name_comment' => 'Used as the identifier of the field .',
+        'field_type_label' => 'Type',
+        'field_label_label' => 'Label',
+        'field_label_comment' => 'Displayed as the label of the field.',
+        'field_tab_label' => 'Tab',
+        'field_tab_comment' => 'The user account tab where the field belongs to (just visual).',
+        'field_tab_default' => 'Misc',
+        'field_span_label' => 'Span',
+        'field_comment_label' => 'Comment'
+    ]
 ];

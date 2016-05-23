@@ -1,0 +1,48 @@
+fields:
+    user_profile_section:
+        label: esroyo.userprofile::lang.settings.form_label
+        type: section
+        comment: esroyo.userprofile::lang.settings.form_comment
+    profile_field:
+        type: repeater
+        prompt: esroyo.userprofile::lang.settings.form_prompt
+        form:
+            fields:
+                name:
+                    label: esroyo.userprofile::lang.settings.field_name_label
+                    comment: esroyo.userprofile::lang.settings.field_name_comment
+                    span: left
+                    required: true
+                type:
+                    label: esroyo.userprofile::lang.settings.field_type_label
+                    span: right
+                    type: dropdown
+                    options:
+                        text: text
+                        number: number
+                        password: password
+                        textarea: textarea
+                label:
+                    label: esroyo.userprofile::lang.settings.field_label_label
+                    comment: esroyo.userprofile::lang.settings.field_label_comment
+                    span: left
+                    required: true
+                comment:
+                    label: esroyo.userprofile::lang.settings.field_comment_label
+                    span: right
+                tab:
+                    label: esroyo.userprofile::lang.settings.field_tab_label
+                    comment: esroyo.userprofile::lang.settings.field_tab_comment
+                    span: left
+                    default: esroyo.userprofile::lang.settings.field_tab_default
+                    placeholder: esroyo.userprofile::lang.settings.field_tab_default 
+                span:
+                    label: esroyo.userprofile::lang.settings.field_span_label
+                    span: right
+                    type: dropdown
+                    options:
+                        auto: auto
+                        left: left
+                        right: right
+                        full: full
+
