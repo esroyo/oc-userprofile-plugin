@@ -31,6 +31,7 @@ class Account extends UserAccountComponent
 
         $this->page['__PARENT__'] = '_account';
         $this->page['__PREFIX__'] = 'user_profile_';
+        $this->page['account_tab'] = Lang::get('rainlab.user::lang.account.account');
         $this->page['user_profile_fields'] = $this->getProfileFieldsByIndex();
 
         return parent::onRun();
