@@ -23,8 +23,10 @@ return [
         'field_comment_label' => 'Comment'
     ],
     'account' => [
-        'account' => 'Account (with profile)',
-        'menu_user_widget' => 'Menu user widget',
+        'account' => 'Account (with profile)'
+    ],
+    'menu_user_widget' => [
+        'menu_user_widget' => 'Menu User Widget',
         'menu_user_widget_desc' => 'Sign in/out widget'
     ]
 ];

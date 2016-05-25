@@ -9,8 +9,8 @@ class MenuUserWidget extends UserAccountComponent
     public function componentDetails()
     {
         return [
-            'name'        => 'esroyo.userprofile::lang.account.menu_user_widget',
-            'description' => 'rainlab.user::lang.account.menu_user_widget_desc'
+            'name'        => 'esroyo.userprofile::lang.menu_user_widget.menu_user_widget',
+            'description' => 'esroyo.userprofile::lang.menu_user_widget.menu_user_widget_desc'
         ];
     }
 
