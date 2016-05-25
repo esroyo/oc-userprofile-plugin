@@ -6,7 +6,7 @@ use File;
 use System\Classes\PluginBase;
 use RainLab\User\Models\User as UserModel;
 use RainLab\User\Controllers\Users as UsersController;
-use Esroyo\UserProfile\Models\Settings as Settings;
+use Esroyo\UserProfile\Models\Settings;
 
 /**
  * UserProfile Plugin Information File

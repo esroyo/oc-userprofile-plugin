@@ -2,7 +2,6 @@
 
 use Lang;
 use RainLab\User\Components\Account as UserAccountComponent;
-use Esroyo\UserProfile\Models\Settings;
 use Exception;
 
 class MenuUserWidget extends UserAccountComponent
