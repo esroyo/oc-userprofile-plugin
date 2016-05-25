@@ -1,0 +1,22 @@
+<ul class="nav navbar-nav navbar-right menu-user-widget">
+    {% if user %}
+    <li>
+        <a href='#' class="menu-user-widget-signout" data-request="onLogout" data-request-data="redirect: '/'">Sign out</a>
+    </li>
+    {% else %}
+    <li class="dropdown menu-user-widget-signin">
+        <a class="dropdown-toggle menu-user-widget-signin-switch" href="#" data-toggle="dropdown">Sign in</a>
+        <div class="dropdown-menu" style="padding:17px;">
+            <form class="menu-user-widget-sigin-form" data-request="onSignin">
+                <div class="form-group menu-user-widget-signin-login">
+                    <input name="login" type="text" placeholder="{{ loginAttributeLabel }}">
+                </div>
+                <div class="form-group menu-user-widget-signin-password">
+                    <input name="password" id="password" type="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn menu-user-widget-signin-btn">Sign in</button>
+            </form>
+        </div>
+    </li>
+    {% endif %}
+</ul>

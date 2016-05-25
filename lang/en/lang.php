@@ -21,5 +21,10 @@ return [
         'field_tab_default' => 'Misc',
         'field_span_label' => 'Span',
         'field_comment_label' => 'Comment'
+    ],
+    'account' => [
+        'account' => 'Account (with profile)',
+        'menu_user_widget' => 'Menu user widget',
+        'menu_user_widget_desc' => 'Sign in/out widget'
     ]
 ];

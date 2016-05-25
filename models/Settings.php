@@ -11,5 +11,4 @@ class Settings extends Model
 
     public $settingsCode = 'user_profile_settings';
     public $settingsFields = 'fields.yaml';
-
 }

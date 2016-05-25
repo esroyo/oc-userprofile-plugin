@@ -14,7 +14,7 @@ use Esroyo\UserProfile\Models\Settings as Settings;
 class Plugin extends PluginBase
 {
 
-    public $require = ['RainLab.User', 'RainLab.Location'];
+    public $require = ['RainLab.User'];
 
     static private $inputTypeMapping = [
         'number' => 'integer',
@@ -46,11 +46,19 @@ class Plugin extends PluginBase
                 'label'       => 'esroyo.userprofile::lang.settings.menu_label',
                 'description' => 'esroyo.userprofile::lang.settings.menu_description',
                 'category'    => 'rainlab.user::lang.settings.users',
-                'icon'        => 'icon-user',
+                'icon'        => 'icon-user-plus',
                 'class'       => 'Esroyo\UserProfile\Models\Settings',
                 'order'       => 500,
                 'permissions' => ['rainlab.users.settings']
             ]
+        ];
+    }
+
+    public function registerComponents()
+    {
+        return [
+            'Esroyo\UserProfile\Components\Account'       => 'account',
+            'Esroyo\UserProfile\Components\MenuUserWidget'       => 'menuUserWidget'
         ];
     }
 
@@ -62,8 +70,6 @@ class Plugin extends PluginBase
 
         UserModel::extend(function($model) use ($profileFieldsNames) {
             $model->addFillable($profileFieldsNames);
-
-            $model->implement[] = 'RainLab.Location.Behaviors.LocationModel';
         });
 
         UsersController::extendFormFields(function($widget) use ($profileFields) {
