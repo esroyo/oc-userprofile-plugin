@@ -65,6 +65,11 @@ class Plugin extends PluginBase
     public function boot()
     {
         $profileFields = Settings::get('profile_field');
+
+        if (!$profileFields) {
+            return;
+        }
+
         $profileFieldsNames = array_column($profileFields, 'name');
         $profileFields = array_combine($profileFieldsNames, $profileFields);
 

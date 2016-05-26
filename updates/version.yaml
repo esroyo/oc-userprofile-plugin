@@ -1,1 +1,2 @@
 1.0.1: First version of User Profile
+1.0.2: Fix error when no profile fields are configured (reported by Jack Schneider) 
