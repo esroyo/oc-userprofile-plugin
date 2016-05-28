@@ -10,6 +10,7 @@ This plugin extends the [User plugin](http://octobercms.com/plugin/rainlab-user)
 * Simple "Sign in/out" component for a menu bar (`menuUserWidget`).
 
 ### Requirements
+* [User plugin](http://octobercms.com/plugin/rainlab-user) 
 * PHP >= 5.5
 
 ### Credits
