@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/esroyo/oc-userprofile-plugin.png?label=ready&title=Ready)](https://waffle.io/esroyo/oc-userprofile-plugin)
 # User Profile plugin
 
 This plugin extends the [User plugin](http://octobercms.com/plugin/rainlab-user) with extra configurable profile fields.
