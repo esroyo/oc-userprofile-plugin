@@ -2,6 +2,7 @@
 
 use Yaml;
 use Schema;
+use Lang;
 use File;
 use System\Classes\PluginBase;
 use RainLab\User\Models\User as UserModel;
@@ -35,7 +36,7 @@ class Plugin extends PluginBase
             'description' => 'esroyo.userprofile::lang.plugin.description',
             'author'      => 'Carles Escrig Royo',
             'icon'        => 'icon-user-plus',
-            'homepage'    => 'https://github.com/esroyo/octobercms-userprofile-plugin'
+            'homepage'    => 'https://github.com/esroyo/oc-userprofile-plugin'
         ];
     }
 
@@ -60,6 +61,21 @@ class Plugin extends PluginBase
             'Esroyo\UserProfile\Components\Account'       => 'account',
             'Esroyo\UserProfile\Components\MenuUserWidget'       => 'menuUserWidget'
         ];
+    }
+
+	/**
+	 * Register new Twig variables
+	 * @return array
+	 */
+	public function registerMarkupTags()
+	{
+		return [
+			'functions' => [
+                '_' => function($messageId, $domain = 'esroyo.userprofile::lang.messages') {
+                    return Lang::get("$domain.$messageId");
+                }
+			]
+		];
     }
 
     public function boot()

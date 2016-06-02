@@ -1,5 +1,7 @@
 {{ form_ajax('onUpdate', { model: user }) }}
 
+    {% set account_tab = _('account', 'rainlab.user::lang.account') %}
+
     <ul id="user-profile-tabs" class="nav nav-tabs" data-tabs="user-profile-tabs">
         <li class="active"><a href="#{{ account_tab }}" data-toggle="tab">{{ account_tab }}</a></li>
 
@@ -12,27 +14,27 @@
     <div id="user-profile-tab-content" class="tab-content" style="padding-top:1em">
         <div class="tab-pane active" id="{{ account_tab }}">
             <div class="form-group">
-                <label for="accountName">Name</label>
+                <label for="accountName">{{ _('name', 'rainlab.user::lang.user') }}</label>
                 <input name="name" type="text" class="form-control" id="accountName" value="{{ form_value('name') }}">
             </div>
 
             <div class="form-group">
-                <label for="accountSurname">Surname</label>
+                <label for="accountSurname">{{ _('surname', 'rainlab.user::lang.user') }}</label>
                 <input name="surname" type="text" class="form-control" id="accountSurname" value="{{ form_value('surname') }}">
             </div>
 
             <div class="form-group">
-                <label for="accountEmail">Email</label>
+                <label for="accountEmail">{{ _('email', 'rainlab.user::lang.user') }}</label>
                 <input name="email" type="email" class="form-control" id="accountEmail" value="{{ form_value('email') }}">
             </div>
 
             <div class="form-group">
-                <label for="accountPassword">New Password</label>
+                <label for="accountPassword">{{ _('new_password', 'rainlab.user::lang.account') }}</label>
                 <input name="password" type="password" class="form-control" id="accountPassword">
             </div>
 
             <div class="form-group">
-                <label for="accountPasswordConfirm">Confirm New Password</label>
+                <label for="accountPasswordConfirm">{{ _('new_password_confirm', 'rainlab.user::lang.account') }}</label>
                 <input name="password_confirmation" type="password" class="form-control" id="accountPasswordConfirm">
             </div>
         </div>
@@ -75,6 +77,6 @@
 
     </div>
 
-    <button type="submit" class="btn btn-primary pull-right">Save</button>
+    <button type="submit" class="btn btn-primary pull-right">{{ _('save', 'backend::lang.form') }}</button>
 
 {{ form_close() }}

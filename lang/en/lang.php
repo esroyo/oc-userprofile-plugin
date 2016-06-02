@@ -27,6 +27,19 @@ return [
     ],
     'menu_user_widget' => [
         'menu_user_widget' => 'Menu User Widget',
-        'menu_user_widget_desc' => 'Sign in/out widget'
+        'menu_user_widget_desc' => 'Sign in/out widget',
+        'account_page' => 'Account page',
+        'account_page_desc' => 'Page name for front-end users account',
+        'forgot_password_page' => 'Forgot password page',
+        'forgot_password_page_desc' => 'Page name to reset the front-end users password',
+    ],
+    'messages' => [
+        'sign_out' =>  'Sign out',
+        'deactivate_account' => 'Deactivate account',
+        'deactivate_account_title' => 'Deactivate your account?',
+        'deactivate_account_description' => "Your account will be disabled and your details removed from the site.\nYou can reactivate your account any time by signing back in.",
+        'deactivate_account_password' => 'To continue, please enter your password:',
+        'deactivate_account_button' => 'Confirm Deactivate Account',
+        'deactivate_account_regret' => 'I changed my mind'
     ]
 ];

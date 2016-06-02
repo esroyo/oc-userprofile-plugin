@@ -3,29 +3,28 @@
     onclick="$('#accountDeactivateForm').toggle()"
     class="btn btn-warning pull-left"
 >
-    Deactivate account
+    {{ _('deactivate_account') }}
 </a>
 
 <div class="clearfix"></div>
 <div id="accountDeactivateForm" style="display: none">
     {{ form_ajax('onDeactivate') }}
         <hr />
-        <h3>Deactivate your account?</h3>
+        <h3>{{ _('deactivate_account_title') }}</h3>
         <p>
-            Your account will be disabled and your details removed from the site.
-            You can reactivate your account any time by signing back in.
+            {{ _('deactivate_account_description') }} 
         </p>
         <div class="form-group">
-            <label for="accountDeletePassword">To continue, please enter your password:</label>
+            <label for="accountDeletePassword">{{ _('deactivate_account_password') }}</label>
             <input name="password" type="password" class="form-control" id="accountDeletePassword" />
         </div>
         <button type="submit" class="btn btn-danger">
-            Confirm Deactivate Account
+            {{ _('deactivate_account_button') }} 
         </button>
         <a
             href="javascript:;"
             onclick="$('#accountDeactivateForm').toggle()">
-            I changed my mind
+            {{ _('deactivate_account_regret') }}
         </a>
     {{ form_close() }}
 </div>
