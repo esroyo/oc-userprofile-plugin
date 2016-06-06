@@ -13,6 +13,7 @@ return [
         'form_prompt' => 'Afegeix un camp de perfil',
         'field_name_label' => 'Nom',
         'field_name_comment' => 'S\'usa com a identificador del camp.',
+        'field_name_unique' => 'El nom del camp ha de ser únic.',
         'field_type_label' => 'Tipus',
         'field_label_label' => 'Etiqueta',
         'field_label_comment' => 'Es mostra com a etiqueta del camp.',

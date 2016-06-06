@@ -86,7 +86,7 @@ class Plugin extends PluginBase
             return;
         }
 
-        $profileFieldsNames = array_column($profileFields, 'name');
+        $profileFieldsNames = array_pluck($profileFields, 'name');
         $profileFields = array_combine($profileFieldsNames, $profileFields);
 
         UserModel::extend(function($model) use ($profileFieldsNames) {
@@ -108,6 +108,10 @@ class Plugin extends PluginBase
 
         Schema::table('users', function($table) use ($profileFields) {
             foreach($profileFields as $profileField) {
+                // security check
+                if (!preg_match('/^[a-zA-Z_]+$/', $profileField['name'])) {
+                    continue;
+                } 
                 if (!Schema::hasColumn('users', $profileField['name'])) {
                     $method = static::$inputTypeMapping[$profileField['type']];
                     $table->$method($profileField['name'])->nullable();

@@ -13,6 +13,7 @@ return [
         'form_prompt' => 'Add a new profile field',
         'field_name_label' => 'Name',
         'field_name_comment' => 'Used as the identifier of the field .',
+        'field_name_unique' => 'The name of the profile field must be unique.',
         'field_type_label' => 'Type',
         'field_label_label' => 'Label',
         'field_label_comment' => 'Displayed as the label of the field.',

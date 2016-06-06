@@ -47,7 +47,7 @@ class Account extends UserAccountComponent
         }
 
         $profileFieldsByIndex = array_fill_keys(
-            array_unique(array_filter(array_column($profileFields, $index))) + [$default],
+            array_unique(array_filter(array_pluck($profileFields, $index))) + [$default],
             []
         );
 

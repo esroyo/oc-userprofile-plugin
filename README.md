@@ -11,7 +11,6 @@ This plugin extends the [User plugin](http://octobercms.com/plugin/rainlab-user)
 
 ### Requirements
 * [User plugin](http://octobercms.com/plugin/rainlab-user) 
-* PHP >= 5.5
 
 ### Credits
 * This plugin is a fork of [UserPlus](https://github.com/rainlab/userplus-plugin)
