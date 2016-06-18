@@ -4,3 +4,4 @@
 1.0.4:
   - Fix SQL error on user column creation (reported by Kevin Vermeulen)
   - Add some validation for the user profile field name
+1.0.5: Fix 'menuUserWidget' component properties access
