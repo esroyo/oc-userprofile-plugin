@@ -7,7 +7,7 @@
         </a>
         <ul class="dropdown-menu" style="padding:17px;">
             <li><a href="{{ accountPage|page }}"><i class="icon-cog"></i> &nbsp; {{ _('account', 'rainlab.user::lang.account') }}</a></li>
-            <li><a href="#" data-request="onLogout" data-request-data="redirect: '{{ redirectPage }}'"><i class="icon-signout"></i> &nbsp; {{ _('sign_out') }}</a></li>
+            <li><a href="#" data-request="onLogout" data-request-data="redirect: '{{ redirect }}'"><i class="icon-signout"></i> &nbsp; {{ _('sign_out') }}</a></li>
     </li>
     </li>
     {% else %}
