@@ -6,3 +6,4 @@
   - Add some validation for the user profile field name
 1.0.5: Fix 'menuUserWidget' component properties access
 1.0.6: Fix 'menuUserWidget' component properties access
+1.0.7: Better tab id attr creation (contributed by kamel <cracki@gmail.com>)

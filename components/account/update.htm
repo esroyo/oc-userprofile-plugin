@@ -6,7 +6,7 @@
         <li class="active"><a href="#{{ account_tab }}" data-toggle="tab">{{ account_tab }}</a></li>
 
         {% for tab, fields in user_profile_fields %}
-            <li><a href="#{{ tab }}" data-toggle="tab">{{ tab }}</a></li>
+            <li><a href="#{{ str_slug(tab) }}" data-toggle="tab">{{ tab }}</a></li>
         {% endfor %}
 
     </ul>
@@ -40,7 +40,7 @@
         </div>
 
         {% for tab, fields in user_profile_fields %}
-        <div class="tab-pane" id="{{ tab }}">
+        <div class="tab-pane" id="{{ str_slug(tab) }}">
 
             {% for field in fields %}
                 <div class="form-group"
