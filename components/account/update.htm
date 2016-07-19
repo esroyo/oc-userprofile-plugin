@@ -55,7 +55,7 @@
                     {% endif %}
 
                     {% if field.type == 'textarea' %}
-                        <textarea name="{{ field.name }}" class="form-control" id="{{ __PREFIX__ ~ field.name }}">{{ form_value(field.name) }}</textarea>
+                        <textarea name="{{ field.name }}" class="form-control" id="{{ __PREFIX__ ~ field.name }}" {% if field.validation == 'required' %}required{% endif %} >{{ form_value(field.name) }}</textarea>
                     {% else %}
                         <input
                             name="{{ field.name }}"
@@ -63,6 +63,7 @@
                             class="form-control"
                             id="{{ __PREFIX__ ~ field.name }}"
                             value="{{ form_value(field.name) }}"
+                            {% if field.validation == 'required' %}required{% endif %}
                         >
                     {% endif %}
 
