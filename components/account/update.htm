@@ -3,7 +3,7 @@
     {% set account_tab = _('account', 'rainlab.user::lang.account') %}
 
     <ul id="user-profile-tabs" class="nav nav-tabs" data-tabs="user-profile-tabs">
-        <li class="active"><a href="#{{ account_tab }}" data-toggle="tab">{{ account_tab }}</a></li>
+        <li class="active"><a href="#{{ str_slug(account_tab) }}" data-toggle="tab">{{ account_tab }}</a></li>
 
         {% for tab, fields in user_profile_fields %}
             <li><a href="#{{ str_slug(tab) }}" data-toggle="tab">{{ tab }}</a></li>
@@ -12,7 +12,7 @@
     </ul>
 
     <div id="user-profile-tab-content" class="tab-content" style="padding-top:1em">
-        <div class="tab-pane active" id="{{ account_tab }}">
+        <div class="tab-pane active" id="{{ str_slug(account_tab) }}">
             <div class="form-group">
                 <label for="accountName">{{ _('name', 'rainlab.user::lang.user') }}</label>
                 <input name="name" type="text" class="form-control" id="accountName" value="{{ form_value('name') }}">
@@ -55,7 +55,7 @@
                     {% endif %}
 
                     {% if field.type == 'textarea' %}
-                        <textarea name="{{ field.name }}" class="form-control" id="{{ __PREFIX__ ~ field.name }}">{{ form_value(field.name) }}</textarea>
+                        <textarea name="{{ field.name }}" class="form-control" id="{{ __PREFIX__ ~ field.name }}" {% if field.validation == 'required' %}required{% endif %} >{{ form_value(field.name) }}</textarea>
                     {% else %}
                         <input
                             name="{{ field.name }}"
@@ -63,6 +63,7 @@
                             class="form-control"
                             id="{{ __PREFIX__ ~ field.name }}"
                             value="{{ form_value(field.name) }}"
+                            {% if field.validation == 'required' %}required{% endif %}
                         >
                     {% endif %}
 

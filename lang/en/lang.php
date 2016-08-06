@@ -21,7 +21,15 @@ return [
         'field_tab_comment' => 'The user account tab where the field belongs to (just visual).',
         'field_tab_default' => 'Misc',
         'field_span_label' => 'Span',
-        'field_comment_label' => 'Comment'
+        'field_comment_label' => 'Comment',
+        'field_validation_label' => 'Validation',
+        'field_validation_required' => 'Required',
+        'field_validation_optional' => 'Optional',
+        'field_validation_comment' => 'Add required to input element',
+        'field_span_auto' => 'auto',
+        'field_span_left' => 'left',
+        'field_span_right' => 'right',
+        'field_span_full' => 'full',
     ],
     'account' => [
         'account' => 'Account (with profile)'
