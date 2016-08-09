@@ -21,7 +21,13 @@ return [
         'field_tab_comment' => 'A quina pestanya del compte de la usuària s\'ha de mostrar el camp.',
         'field_tab_default' => 'Misc',
         'field_span_label' => 'Span',
-        'field_comment_label' => 'Comentari'
+        'field_comment_label' => 'Comentari',
+        'field_required_label' => 'Obligatori',
+        'field_required_comment' => 'El camp s\'ha d\'emplenar.',
+        'field_span_auto' => 'Automàtic',
+        'field_span_left' => 'Esquerra',
+        'field_span_right' => 'Dreta',
+        'field_span_full' => 'Tot',
     ],
     'account' => [
         'account' => 'Compte (amb perfil)'

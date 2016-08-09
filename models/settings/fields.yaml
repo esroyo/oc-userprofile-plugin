@@ -41,7 +41,12 @@ fields:
                     span: right
                     type: dropdown
                     options:
-                        auto: auto
-                        left: left
-                        right: right
-                        full: full
+                        auto: esroyo.userprofile::lang.settings.field_span_auto
+                        left: esroyo.userprofile::lang.settings.field_span_left
+                        right: esroyo.userprofile::lang.settings.field_span_right
+                        full: esroyo.userprofile::lang.settings.field_span_full
+                required:
+                    label: esroyo.userprofile::lang.settings.field_required_label
+                    span: left
+                    type: switch
+                    comment: esroyo.userprofile::lang.settings.field_required_comment

@@ -63,19 +63,19 @@ class Plugin extends PluginBase
         ];
     }
 
-	/**
-	 * Register new Twig variables
-	 * @return array
-	 */
-	public function registerMarkupTags()
-	{
-		return [
-			'functions' => [
+    /**
+     * Register new Twig variables
+     * @return array
+     */
+    public function registerMarkupTags()
+    {
+        return [
+            'functions' => [
                 '_' => function($messageId, $domain = 'esroyo.userprofile::lang.messages') {
                     return Lang::get("$domain.$messageId");
                 }
-			]
-		];
+            ]
+        ];
     }
 
     public function boot()
@@ -107,8 +107,8 @@ class Plugin extends PluginBase
         }
 
         Schema::table('users', function($table) use ($profileFields) {
-            foreach($profileFields as $profileField) {
-                // security check
+            foreach ($profileFields as $profileField) {
+                // Security check
                 if (!preg_match('/^[a-zA-Z_]+$/', $profileField['name'])) {
                     continue;
                 } 

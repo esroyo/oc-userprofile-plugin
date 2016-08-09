@@ -12,7 +12,7 @@ return [
         'form_comment' => 'Use this section to add extra user fields.',
         'form_prompt' => 'Add a new profile field',
         'field_name_label' => 'Name',
-        'field_name_comment' => 'Used as the identifier of the field .',
+        'field_name_comment' => 'Used as the identifier of the field.',
         'field_name_unique' => 'The name of the profile field must be unique.',
         'field_type_label' => 'Type',
         'field_label_label' => 'Label',
@@ -21,7 +21,13 @@ return [
         'field_tab_comment' => 'The user account tab where the field belongs to (just visual).',
         'field_tab_default' => 'Misc',
         'field_span_label' => 'Span',
-        'field_comment_label' => 'Comment'
+        'field_comment_label' => 'Comment',
+        'field_required_label' => 'Required',
+        'field_required_comment' => 'The field must be filled.',
+        'field_span_auto' => 'Auto',
+        'field_span_left' => 'Left',
+        'field_span_right' => 'Right',
+        'field_span_full' => 'Full',
     ],
     'account' => [
         'account' => 'Account (with profile)'
