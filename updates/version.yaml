@@ -11,3 +11,4 @@
   - Add required html attr to a profile field (contributed by kamel <cracki@gmail.com>)
   - Persian translation (contributed by kamel <cracki@gmail.com>)
 1.0.9: Fix backend settings menu to the right category (reported by WebShapedBiz)
+1.0.10: Fix broken backend menu

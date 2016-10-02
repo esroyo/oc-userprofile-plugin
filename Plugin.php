@@ -5,6 +5,7 @@ use Schema;
 use Lang;
 use File;
 use System\Classes\PluginBase;
+use System\Classes\SettingsManager;
 use RainLab\User\Models\User as UserModel;
 use RainLab\User\Controllers\Users as UsersController;
 use Esroyo\UserProfile\Models\Settings;
