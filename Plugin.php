@@ -46,7 +46,7 @@ class Plugin extends PluginBase
             'settings' => [
                 'label'       => 'esroyo.userprofile::lang.settings.menu_label',
                 'description' => 'esroyo.userprofile::lang.settings.menu_description',
-                'category'    => 'rainlab.user::lang.settings.users',
+                'category'    => SettingsManager::CATEGORY_USERS,
                 'icon'        => 'icon-user-plus',
                 'class'       => 'Esroyo\UserProfile\Models\Settings',
                 'order'       => 500,
