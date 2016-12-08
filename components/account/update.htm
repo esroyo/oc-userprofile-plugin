@@ -11,10 +11,10 @@
     {% set account_tab = _('account', 'rainlab.user::lang.account') %}
 
     <ul id="user-profile-tabs" class="nav nav-tabs" data-tabs="user-profile-tabs">
-        <li class="active"><a href="#{{ str_slug(account_tab) }}" data-toggle="tab">{{ account_tab }}</a></li>
+        <li class="nav-item active"><a href="#{{ str_slug(account_tab) }}" data-toggle="tab" class="nav-link active">{{ account_tab }}</a></li>
 
         {% for tab, fields in user_profile_fields %}
-            <li><a href="#{{ str_slug(tab) }}" data-toggle="tab">{{ tab }}</a></li>
+            <li class="nav-item"><a href="#{{ str_slug(tab) }}" data-toggle="tab" class="nav-link">{{ tab }}</a></li>
         {% endfor %}
 
     </ul>
