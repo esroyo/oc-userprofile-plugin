@@ -13,3 +13,4 @@
 1.0.9: Fix backend settings menu to the right category (reported by WebShapedBiz)
 1.0.10: Fix broken backend menu
 1.0.11: Add bootstrap v4 tab classes (reported by rustytheitgod)
+1.0.12: German translation (contributed by Lukas Dürrenberger <eXpl0it3r@sfml-dev.org>)
